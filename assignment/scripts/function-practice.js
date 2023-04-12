@@ -31,7 +31,12 @@ function addNumbers(num1, num2) {
 console.log(addNumbers(2, 5)); // followed this in class! Stuck again
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {}
+function multiplyThree(num1, num2, num3) {
+  let multiplication = num1 * num2 * num3;
+  return multiplication;
+}
+
+console.log(multiplyThree(2, 2, 3));// output was 12
 
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise

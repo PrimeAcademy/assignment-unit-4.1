@@ -9,21 +9,26 @@ function hello() {
   return console.log("Hello World!");
 }
 // Call the function to test
-console.log('Test - should say "Hello World!"');//Hello was added in here already? So I moved it to its own on line 13
+console.log('Test - should say "Hello World!"'); //Hello was added in here already? So I moved it to its own on line 13
 hello();
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName(name) {
   return console.log(`Hello, ${name}!`);
-} // 
+} //
 // Remember to call the function to test
-helloName('David');
-helloName('Rebecca');// Outputted both names correctly! Win! Stuck in term!
+helloName("David");
+helloName("Rebecca"); // Outputted both names correctly! Win! Stuck in term!
+
 // 3. Function to add two numbers together & return the result
-function addNumbers(firstNumber) {
-  // return firstNumber + secondNumber;
+
+function addNumbers(num1, num2) {
+  let sum = num1 + num2;
+  return sum;
 }
+
+console.log(addNumbers(2, 5)); // followed this in class! Stuck again
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree() {}

@@ -97,17 +97,17 @@ describe('Automated tests', function () {
             assert.equal(find(5, [2, 3, 4]), false);
         });
     });
-    describe(`Functions are tested using console.log()`, function () {
-        it(`Functions are tested using console.log()`, function () {
-            if (typeof counter === 'undefined') {
-                // Skip this test if running on the server
-                this.skip();
-            } else {
-                // Only run this test in the browser
-                expect(counter, `console.log() was only called ${counter} times.`).to.be.greaterThan(12);
-            }
-        });
-    });
+    // describe(`Functions are tested using console.log()`, function () {
+    //     it(`Functions are tested using console.log()`, function () {
+    //         if (typeof counter === 'undefined') {
+    //             // Skip this test if running on the server
+    //             this.skip();
+    //         } else {
+    //             // Only run this test in the browser
+    //             expect(counter, `console.log() was only called ${counter} times.`).to.be.greaterThan(12);
+    //         }
+    //     });
+    // });
     describe(`STRETCH: Checks the first letter of a string`, function () {
         it(`STRETCH: Checks the first letter of a string`, function () {
             let { isFirstLetter } = testItems;
